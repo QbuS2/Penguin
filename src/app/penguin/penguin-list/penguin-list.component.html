@@ -1,0 +1,16 @@
+<div class="list-group">
+    <div class="list-group-item list-group-item-action active">
+        <span> All penguins </span>
+        <span class="textRight">Remove</span>
+        <span class="textRight">Edit</span>
+    </div>
+    <span *ngFor="let penguin of penguins$ | async">
+        <div class="list-group-item list-group-item-action"  >
+        <span class="name" (click)="selectPenguin(penguin)"> 
+            {{ penguin.name }}
+        </span>
+        <span class="button" (click)="removePenguin(penguin)"><img src="../../../assets/delete-24px.svg" alt=""></span>
+        <span class="button" (click)="editPenguin(penguin)"><img src="../../../assets/edit-24px.svg" alt=""></span>
+    </div>
+    </span>
+</div>

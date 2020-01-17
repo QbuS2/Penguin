@@ -1,0 +1,30 @@
+$violet: #3f51b5;
+.list-group-item {
+  cursor: pointer;
+}
+.list-group-item.active {
+  background-color: $violet;
+  border-color: $violet;
+}
+
+.textRight{
+  float: right;  
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+.button{
+  float: right;  
+  margin-right: 10px;
+  margin-left: 40px;
+  border: 1px solid;
+  &:hover{
+    border-color: #ccc;    
+  }
+}
+
+.name{
+  padding-left: 10px;
+  padding-right: 20px;
+  word-wrap: break-word;
+}
